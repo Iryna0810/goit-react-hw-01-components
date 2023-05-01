@@ -11,13 +11,22 @@ export function App () {
   return (
     <div
       style={{
-        height: "100vh",
-        display: "inline-block",
-        margin: '60px',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+        position: "relative",
+        top: "50px",
+        height: "auto",
+        width: 'auto',
+        maxWidth: "600px",
+        display: "block",
+        margin: '0 auto',
+        padding: '20px',
+        fontSize: "40px",
+        boxShadow: '10px 20px 14px -7px #276873',
+	      background: 'linear-gradient(to bottom, #7892c2 5%, #476e9e 100%)',
+	backgroundColor: '#637aad',
+	borderRadius: '25px',
+        color: "#ffffff",
+        fontFamily: "Arial",
+        textDecoration: 'none',
       }}
     >
       <Profile

@@ -1,5 +1,6 @@
 import friends from "../Friends/friends.json";
 // import PropTypes from "prop-types";
+// import css from "..Friends/Friends.module.css";
 
 const FriendsListItem = () => {
     return (

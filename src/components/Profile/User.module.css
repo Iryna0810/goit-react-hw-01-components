@@ -1,0 +1,18 @@
+.description {
+    font-size: 32px;
+    text-align: center;
+}
+
+.description > ul {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color:rgb(44, 5, 80);
+    padding: 0;
+}
+
+.name {
+    font-size: 48px;
+}
+

@@ -1,0 +1,25 @@
+.title {
+    font-size: 36px;
+    color: rgb(18, 18, 94);
+    text-align: center;
+    text-decoration: underline;
+}
+.statList {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.statList > li {
+padding: 15px;
+border: 2px solid violet;
+border-radius: 8px;
+background-color: #599bb3;
+text-decoration: none;
+display: flex;
+gap: 15px;
+}

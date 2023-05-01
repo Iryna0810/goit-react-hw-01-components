@@ -1,15 +1,16 @@
 // import stats from "./data.json"
 import PropTypes from "prop-types";
+import css from './Statistics.module.css'
 
 const Statistics = ({ title, stats }) => {
     // console.log(stats);
     return (
         <section className="statistics">
     
-            {title && (<h2 className="title">{title}</h2>
+            {title && (<h2 className={css.title}>{title}</h2>
             )}
 
-            <ul className="stat-list">
+            <ul className={css.statList}>
   
                 {stats.map((element) => (
                     <li className="item" key={element.id}>
