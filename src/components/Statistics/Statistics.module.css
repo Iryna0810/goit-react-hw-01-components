@@ -8,18 +8,18 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    list-style-type: none;
-    font-size: 20px;
     margin: 0 auto;
     padding: 0;
+    list-style-type: none;
+    font-size: 20px;
 }
 
 .statList > li {
+display: flex;
+gap: 15px;
 padding: 15px;
 border: 2px solid violet;
 border-radius: 8px;
-background-color: #599bb3;
+background-color: #3d9cbe;
 text-decoration: none;
-display: flex;
-gap: 15px;
 }

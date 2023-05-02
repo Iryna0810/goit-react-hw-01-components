@@ -1,10 +1,10 @@
 import transactions from '../TransactionHistory/transactions.json';
-
+import css from "./TransactionHistory.module.css";
 
 const TransactionHistory = () => {
     return (
 
-        <table className="transaction-history">
+        <table className={css.transactionHistory}>
             <thead>
                 <tr>
                     <th>Type</th>

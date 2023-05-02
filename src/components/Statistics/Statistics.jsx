@@ -1,9 +1,7 @@
-// import stats from "./data.json"
 import PropTypes from "prop-types";
 import css from './Statistics.module.css'
 
 const Statistics = ({ title, stats }) => {
-    // console.log(stats);
     return (
         <section className="statistics">
     
