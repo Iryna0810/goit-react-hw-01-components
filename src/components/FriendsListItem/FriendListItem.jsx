@@ -1,18 +1,27 @@
 import friends from "../Friends/friends.json";
-// import PropTypes from "prop-types";
-// import css from "..Friends/Friends.module.css";
+import PropTypes from "prop-types";
+import css from "./FriendListItem.module.css";
+import clsx from 'clsx';
 
 const FriendsListItem = () => {
     return (
-        friends.map((friend) => (
-            <li className="item" key={friend.id}>
-                <span className="status">{friend.isOnline}</span>
-                <img className="avatar" src={friend.avatar} alt={friend.name} width="48" />
-                <p className="name">{friend.name}</p>
+        friends.map(({id, isOnline, avatar, name}) => (
+            <li className={css.item} key={id}>
+                <span className={clsx(css.status, isOnline === true ? css["online"] :
+                    css["offline"])}>
+                </span>
+                <img className={css.avatar} src={avatar} alt={name} width="60px" height="60px" />
+                <p className={css.name}>{name}</p>
             </li>
         ))
     )
 };
 
+FriendsListItem.propTypes = {
+    avatar: PropTypes.string,
+    name: PropTypes.string,
+    isOnline: PropTypes.bool,
+    id: PropTypes.number,
+}
 
 export default FriendsListItem;
