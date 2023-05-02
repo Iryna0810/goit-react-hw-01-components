@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 const FriendList = () => {
     return (
-        <ul className={css.friendList}>
+        <ul className='friendList'>
             <FriendsListItem
                 avatar={friends.avatar}
                 name={friends.name}
